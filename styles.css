@@ -1,0 +1,499 @@
+/***************************************/
+/* NAVBAR */
+/**************************************/
+
+.navbar {
+    height: 70px;
+    background-color: dimgrey;
+    color: white;
+    
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0px 30px;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.menu-items {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-items a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+ 
+.menu-items a:hover {
+    color: lightblue;
+}
+
+.menu-items li {
+    margin-left: 20px;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    background-color: black;
+    color:  darkgray;
+    margin: 0px;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 40px;
+    color: wz;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 22px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+h5 {
+    font-size: 16px;
+    margin: 0px;
+}
+/*******************************************/
+/* HOME                                    */
+/*******************************************/
+.brenda{
+    background-image: url("background2.jpg");
+    background-size: cover;
+    height:700px;
+    margin: 0px;
+    
+    
+}
+
+@media screen and (min-width: 700px) 
+    #home-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+.name h1{
+    color: white;
+    font-size: 100px;
+}
+.about h2{
+    color: white;
+    margin-top: 60px;
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+.me h2{
+    color: wheat;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.in p{
+    color: wheat;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.keyboard{
+
+    background-image: url("laptop2.avif");
+    background-size: cover;
+    height: 400px;
+    width: 900px;
+    border-radius: 30px;
+    margin-bottom: 70px;
+    margin-right: 100px;
+    padding-top: 30px;
+
+    
+
+
+}
+.two{
+    display: flex;
+}
+   
+/******************************************/
+/* CONTACT                               */
+/*****************************************/
+
+#contact-wrapper{
+    margin: 20px
+}
+.form-question {
+    margin: 20px 0px;
+}
+
+.form-question label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.required label::after {
+    content: " *";
+    color: red;
+}
+
+.form-question input,
+.form-question textarea {
+    width: 80vw;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit {
+    padding: 5px 15px;
+    background-color: royalblue;
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    box-shadow: 1px 2px #333333;
+}
+
+#submit:hover {
+    background-color: white;
+    color: royalblue;
+    border: 1px solid royalblue;
+    box-shadow: none;
+}
+
+#submit:active{
+    background-color: aqua;
+    color: red;
+    box-shadow: 1px;
+    border: 1px solid black;
+}
+/******************************************/
+/* PROJECTS                               */
+/******************************************/
+
+
+#projects-info{
+
+    margin: 30px;
+}
+#flex-projects{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.project-card{
+    background-color: #fff;
+    height: 300px;
+    width: 300px;
+    margin: 2opx;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23),;
+}
+.project-card:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.project-link{
+    text-decoration: none;
+    color: #444
+}
+.project-title{
+    text-transform: none;
+    font-style: normal;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+.project-image{
+    width:"100%";
+    height: 60%;
+    object-fit: cover;
+}
+.project-text{
+    margin: 10px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+/**    HAPPYBIRTHDAY GIFTS IN PROJECTS    **/
+
+
+.happybirthday{
+
+background-image: linear-gradient(180deg, red, blue);
+    text-align: center;
+    margin: 20px;
+    border: 2px solid black;
+    width:700px;
+    margin-bottom: 0px;
+
+    
+     
+    
+
+    
+}
+.brighton{
+background-image:linear-gradient(deepskyblue,deeppink);
+text-align: center;
+margin: 20px;
+border: 2px solid black;
+width:700px;
+}
+.whisher h1{
+
+color: white;
+padding: 40px;
+font-size: 40px;
+font-style: italic;
+font-weight: bold;
+text-shadow: 2px 2px deeppink;
+
+
+    
+}
+
+
+.age h2{
+    color: whitesmoke;
+    padding: 18px;
+    font-size: 10px;
+    font-style: normal;
+    
+    
+}
+.date h2{
+    color: whitesmoke;
+    font-size: 15px;
+    font-style: normal;
+    text-shadow: 2px 2px deeppink;
+}
+.gift1 h3{
+    color: whitesmoke;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 2px 2px red;
+    
+}
+
+
+.cover1{
+
+    background-image: url("giftcover.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin-right: 100px;
+    margin-left: 100px;
+
+}
+.cover1:hover{
+    background-image: url("happybaby.webp");
+    background-size: cover;
+    padding: 50px;
+    height: 200px;
+}
+.cover2{
+    background-image: url("giftcover.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.cover2:hover{
+background-image: url("ennjoy2.jpeg");
+    background-size: cover;
+    padding: 50px;
+    height: 200px;
+ 
+}
+
+.gift2 h3 {
+    color: whitesmoke;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 2px 2px red;
+
+}
+.gift3 h3 {
+    color: whitesmoke;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow: 2px 2px red;
+
+}
+.cover3 {
+    background-image: url("giftcover.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.cover3:hover {
+    background-image: url("mygift.jpg");
+    background-size: cover;
+    padding: 50px;
+    height: 200px;
+
+}
+.market p{
+    color: white;
+    background-color: black;
+    height: 120px;
+    margin-bottom:0px;
+    padding-top: 30px;
+}
+.back-link{
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    background-color: blue;
+    text-decoration: none;
+
+}
+.topic{
+    padding-left: 300px;
+}
+.bramuel{
+
+    background-image: linear-gradient(to right, #f83600, #f9d423);
+        text-align: center;
+        margin: 20px;
+        border: 2px solid black;
+        width: 700px;
+}
+.khajija{
+    background-image: linear-gradient(ORANGE,blue);
+        text-align: center;
+        margin: 20px;
+        border: 2px solid black;
+        width: 700px;
+        
+}
+.image-birthday img{
+    border-radius: 50%;
+    height: 700px;
+    width: 500PX;
+    
+}
+.image-velma img{
+   border-radius: 50%; 
+   height: 300px;
+   width: 300px;
+   
+}
+.image-bramuel img{
+    border-radius: 50%;
+    height: 400px;
+}
+.image-briton img{
+border-radius: 50%;
+height: 400px;
+width: 400px;
+
+}
+
+
+/*******************************************/
+/* CV                                       */
+/********************************************/
+#cv-grid {
+    padding: 0px 20px;
+}
+
+@media screen and (min-width: 700px) {
+    #cv-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    #cv-title {
+        grid-column: 1 / 6;
+    }
+
+    #cv-contact {
+        grid-column: 6 / 9;
+        align-self: center;
+    }
+
+    #cv-profile,
+    #cv-skills,
+    #cv-work,
+    #cv-education {
+        grid-column: 1 / 3;
+    }
+
+    #cv-profile-info,
+    #cv-skills-info,
+    #cv-work-info,
+    #cv-education-info {
+        grid-column: 3 / 9;
+    }
+
+    #cv-grid hr {
+        grid-column: 1 / 9;
+        width: 95%;
+        background-color: #004279;
+    }
+}
+
+.work-title-left {
+    display: inline-block;
+    width: 74%;
+}
+
+.work-title-right {
+    display: inline-block;
+    width: 24%;
+}
