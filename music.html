@@ -1,37 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <div class="menu-container">
-            <div class="logo">My Logo</div>
-            <div class="menu">
-                <ul class="menu-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="cv.html">Cv</a></li>
-                    <li><a href="contact.html">contant</a></li>
-
-                </ul>
-            </div>
-
+      <div class="menu-container">
+        <div class="logo">My Logo</div>
+        <div class="menu">
+          <ul class="menu-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <div class="back-link">
-        <a href="projects.html">Back to project</a>
-    </div>
     
-</body>
-<h1>MUSIC PLAYER</h1>
+    <div class="back-link">
+      <a href="projects.html">Back to projects</a>
+    </div>
 
-<div class="title">
-    <h1> BEST      MUSIC PLAYER APP</h1>
+    <div id="music">
+      <div class="title">
+        <h1>MUSIC PLAYER</h1>
+        <h1 class="font-bold">BEST OF BEST MUSIC APP</h1>
+        <h2>Best versions of songs</h2>
+      </div>
 
-</div>
+      <div class="music-img">
+        <img
+          src="https://images.unsplash.com/photo-1507692049790-de58290a4334?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d29yc2hpcCUyMHNvbmdzJTIwcGhvdG9zfGVufDB8fDB8fHww"
+          width="500px"
+          alt="Music Image"
+        />
+      </div>
+
+      <div class="progress">
+        <label for="progress-bar">Music Progress:</label>
+        <progress id="progress-bar" value="0" max="100"></progress>
+      </div>
+
+      <div class="time">
+        <small id="current-time">0:00</small>
+        <small id="final-time">3:57</small>
+      </div>
+
+      <div class="buttons">
+        <button class="prev">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaihLAZmhgEB2NuvULFdPJsfrPi2eO3Pdyqg&s" alt="Previous" />
+        </button>
+        <button class="play">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYZm04Oa3xL7k2YwoAOWQtDyxqwUmXIziUhg&s" alt="Play" />
+        </button>
+        <button class="next">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAS0ihxNZWsrzLmBO5B5tXe6_mtO-pm5o93w&s" alt="Next" />
+        </button>
+        <button class="pause">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2CdvRZC7o7YVswwhA3Bap7QWbpgFk2_Inw&s" alt="Pause" />
+        </button>
+        <button class="shuffle">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOf9IrrWN0fDd1orQni1VLHXV6LaHs86H0GQ&s" alt="Shuffle" />
+        </button>
+      </div>
+
+      <div id="music-titles">
+        <!-- Buttons for songs will be dynamically created here by JavaScript -->
+      </div>
+    </div>
+
+    <script src="html.js"></script>
+  </body>
+</html>
