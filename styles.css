@@ -574,8 +574,9 @@ h5 {
   width: 700px;
 }
 .image-omondi img {
-  height: 350px;
-  width: 300px;
+  height: 550px;
+  width: 400px;
+  border-radius: 10%;
 }
 .image-velma img {
   border-radius: 50%;
