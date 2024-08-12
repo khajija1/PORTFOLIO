@@ -4,7 +4,6 @@
 
 .navbar {
   height: 70px;
-  background-color: dimgrey;
   color: white;
   width: 100%;
 }
@@ -102,15 +101,7 @@ h5 {
 /* HOME                                    */
 /*******************************************/
 
-@media screen and(max-width:500px) {
-  .about {
-    display: grid;
-    text-wrap: wrap;
-  }
-  .navbar {
-    width: 100vw;
-  }
-}
+
 
 .brenda {
   background-image: url("gpt2.avif");
@@ -259,8 +250,8 @@ h5 {
 
 @media screen and(max-width:500px) {
   .birthday-wrapper {
-    display: grid;
-    text-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -582,8 +573,8 @@ h5 {
   border: 2px solid black;
   width: 700px;
 }
-.image-birthday img {
-  height: 400px;
+.image-omondi img {
+  height: 350px;
   width: 300px;
 }
 .image-velma img {
@@ -673,6 +664,12 @@ h5 {
 /***************************************************************/
 /***                    MUSIC PROJECT                         ***/
 /*******************************************************************/
+@media screen and (max-width: 500px) {
+  #music {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
 
 .music-backlink {
   border-radius: 10px;
