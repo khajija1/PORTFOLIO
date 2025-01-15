@@ -262,6 +262,7 @@ h5 {
   border: 2px solid black;
   width: 700px;
   margin-bottom: 0px;
+  
 }
 .birthday-wrapper {
   display: flex;
@@ -293,12 +294,12 @@ h5 {
 }
 
 .omondi-whisher h1 {
-  color: white;
+  color: blue;
   padding: 40px;
   font-size: 40px;
   font-style: italic;
   font-weight: bold;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px maroon;
 }
 .age h2 {
   color: whitesmoke;
@@ -574,8 +575,8 @@ h5 {
   width: 700px;
 }
 .image-omondi img {
-  height: 550px;
-  width: 400px;
+  height: auto;
+  width: auto;
   border-radius: 10%;
 }
 .image-velma img {
